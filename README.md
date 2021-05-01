@@ -1,12 +1,15 @@
 # Mustang-CLT
 Command Line Tools: parsing log files, etc.
 
+`show_graph.py` runs logfinder, and shows the data in a graph. This is the preferred way to use logfinder. 
+
+### CLI Options for show_graph.py
+- Use `-c` or `--use_cache` to not collect data from the robot and use pre-existing data.
+- Use `-g` or `--no_graph` to collect data from the robot but not display a graph.
+
 `logfinder.sh` downloads PID data from the robot and converts it to a CSV file. This is ideal if you only want the CSV conversion without displaying the graph. This works on any system.
 
 `logfinder.bat` downloads PID data from the robot and converts it to a CSV file. This is ideal if you only want the CSV conversion without displaying the graph This only works in Windows devices.
-
-`show_graph.py` runs logfinder, and shows the data in a graph.
-
 
 ## Troubleshooting
 - If logs are lost, run this command on the robot
