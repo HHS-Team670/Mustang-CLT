@@ -1,9 +1,16 @@
 # Mustang-CLT
 Command Line Tools: parsing log files, etc.
 
-`logfinder.sh` downloads, converts to CSV, and displays PID data from the robot. This works on any system
+`logfinder.sh` downloads PID data from the robot and converts it to a CSV file. This is ideal if you only want the CSV conversion without displaying the graph. This works on any system.
 
-`logfinder.bat` downloads PID data from the robot and converts it to a CSV file. This only works in Windows devices.
+`logfinder.bat` downloads PID data from the robot and converts it to a CSV file. This is ideal if you only want the CSV conversion without displaying the graph This only works in Windows devices.
+
+`show_graph.py` runs logfinder, and shows the data in a graph.
+
+
+## Troubleshooting
+- If logs are lost, run this command on the robot
+`ln -s /var/local/natinst/log/FRC_UserProgram.log FRC_UserProgram.log`
 
 ## Branching and Workflow on this Repository<br/>
 Please check this document for the team's policy for committing code to GitHub!<br/>
