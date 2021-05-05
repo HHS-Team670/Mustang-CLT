@@ -12,7 +12,7 @@ def getLogs():
 
 def showGraph():
     dataset = pd.read_csv("testdata.csv")
-    dataset.plot("Count", ["LeftSpeedSetPoint", "LeftSpeed", "RightSpeedSetPoint", "RightSpeed"], subplots=False, color=["red", "orange", "green", "blue"])
+    dataset.plot("Count", ["LeftSpeedSetPoint", "LeftSpeed", "LeftOutput", "RightSpeedSetPoint", "RightSpeed", "RightOutput"], subplots=False, color=["red", "orange","gold", "green", "blue", "cyan"])
     plt.show()
 
 
